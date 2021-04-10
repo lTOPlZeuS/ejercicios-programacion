@@ -1,0 +1,56 @@
+Funcion equilatero
+Inicio
+	Variable medida es Numérico Real
+	
+	Leer "Ingrese la medida de su triangulo:",medida
+	medida=medida*3
+	Escribir "El perimetro es "
+Fin
+
+Funcion isosceles
+Inicio
+	Variable lado es Numérico Real
+	Variable base es Numérico Real
+	Variable peri es Numérico Real
+
+	Leer "Ingrese la altura de su triangulo:",lado
+	Leer "Ingrese la base de su triangulo:",base
+	peri=(lado*2)+base
+	Escribir "El perimetro es"
+Fin
+
+Funcion escaleno
+Inicio
+	Variable lado1 es Numérico Real
+	Variable lado2 es Numérico Real
+	Variable base es Numérico Real
+	Variable peri es Numérico Real
+
+	Leer "Ingrese la altura 1 de su triangulo:",lado1
+	Leer "Ingrese la altura 2 de su triangulo:",lado2
+	Leer "Ingrese la base de su triangulo:",base
+	peri=lado1+lado2+base
+	Escribir "El perimetro es"
+Fin
+
+Inicio
+    Variable numero es opcion Natural
+	Variable opcion es opcion1 Natural
+
+    Leer "Ingrese  1-Triangulo equilatero  2-Triangulo isoseles  3-Triangulo escaleno", opcion1
+	Si (esValida(opcion1==1)) entonces
+	   equilatero()
+	Si (esValida(opcion1==1)) entonces
+		isosceles()
+	Si (esValida(opcion1==1)) entonces
+		escaleno()
+	Sino
+		Escribir opcion no valida
+	Fin-Si
+	Leer "Si desea continuar presione 1", opcion
+	Si(esValida(opcion==1))
+		Repetir el programa
+	Sino
+		Fin
+	Fin-Si
+Fin

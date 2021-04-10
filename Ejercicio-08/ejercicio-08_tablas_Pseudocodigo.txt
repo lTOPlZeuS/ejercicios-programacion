@@ -1,0 +1,17 @@
+Inicio
+    Variable numero es Numérico Natural
+	Variable opcion es Numérico Natural
+	Variable i es Numérico Natural
+
+    Leer " Introduzca la tabla que quiere:", numero
+	Escribir "La tabla de multiplicar es"
+	iniciar acumulador
+		Escribir (),i,numero,i*numero
+	repetir acumulador hasta llegar a 10
+	Leer "Si desea continuar presione 1", opcion
+	Si(esValida(opcion==1))
+		Repetir el programa
+	Sino
+		Fin
+	Fin-Si
+Fin

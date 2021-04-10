@@ -1,0 +1,39 @@
+Inicio
+    Variable mes es Numérico Natural
+	Variable opcion es Numérico Natural
+
+    Leer "Introduzca mes del ano:", mes
+	Si (esValida(mes==0)) entonces
+	    Escribir Enero
+	Si (esValida(mes==1)) entonces
+	    Escribir Febrero
+	Si (esValida(mes==2)) entonces
+	    Escribir Marzo
+	Si (esValida(mes==3)) entonces
+	    Escribir Abril
+	Si (esValida(mes==4)) entonces
+	    Escribir Mayo
+	Si (esValida(mes==5)) entonces
+	    Escribir Junio
+	Si (esValida(mes==6)) entonces
+	    Escribir Julio
+	Si (esValida(mes==7)) entonces
+	    Escribir Agosto
+	Si (esValida(mes==8)) entonces
+	    Escribir Septiembre
+	Si (esValida(mes==9)) entonces
+	    Escribir Octubre
+	Si (esValida(mes==10)) entonces
+	    Escribir Noviembre
+	Si (esValida(mes==11)) entonces
+	    Escribir Diciembre
+	Sino
+		Escribir Digite uno correcto
+	Fin-Si
+	Leer "Si desea continuar presione 1", opcion
+	Si(esValida(opcion==1))
+		Repetir el programa
+	Sino
+		Fin
+	Fin-Si
+Fin

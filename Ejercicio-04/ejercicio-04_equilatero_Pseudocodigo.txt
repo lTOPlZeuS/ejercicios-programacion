@@ -1,0 +1,13 @@
+Inicio
+    Variable medida es Numérico Real
+	Variable opcion es Numérico Natural
+
+    Leer "Ingrese la medida de su triangulo:", medida
+	Escribir "El perimetro es",medida
+	Leer "Si desea continuar presione 1", opcion
+	Si(esValida(opcion==1))
+		Repetir el programa
+	Sino
+		Fin
+	Fin-Si
+Fin

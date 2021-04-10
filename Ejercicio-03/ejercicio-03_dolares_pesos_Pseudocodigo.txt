@@ -1,0 +1,25 @@
+Inicio
+    Variable peso es Numérico Real
+	Variable dolar es Numérico Real
+	Variable conver es Numérico Real
+	Variable opcion es Numérico Natural
+
+    Leer "Opciones:oprima 1-Convertir dolares a pesos  2-Convertir pesos a dolares:", numero
+	Si (esValida(numero==1)) entonces
+	     Leer "Introducir dolares"dolar
+		 conver=(dolar*22)
+		 Escribir "La conversion es  dolares obtienes" dolar,conver
+	Sino(esValida(numero==2)) entonces
+	     Leer "Introducir pesos"peso
+		 conver=(peso/22)
+		 Escribir "La conversion es  pesos obtienes" peso,conver
+	Sino
+		Escribir "Opcion no valida"
+	Fin-Si
+	Leer "Si desea continuar presione 1", opcion
+	Si(esValida(opcion==1))
+		Repetir el programa
+	Sino
+		Fin
+	Fin-Si
+Fin

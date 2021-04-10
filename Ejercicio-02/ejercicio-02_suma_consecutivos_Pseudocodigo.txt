@@ -1,0 +1,20 @@
+Inicio
+    Variable numero es Numérico Natural
+	Variable opcion es Numérico Natural
+
+    Leer "Introduzca un numero maximo a 50:", numero
+	Si (esValida(numero>0)) entonces
+	     Escribir Ingrese un numero debajo de 51
+	Sino
+		iniciar acumulador 
+		cont=cont=n
+		repetir acumulador hasta llegar a numero
+	Fin-Si
+
+	Leer "Si desea continuar presione 1", opcion
+	Si(esValida(opcion==1))
+		Repetir el programa
+	Sino
+		Fin
+	Fin-Si
+Fin

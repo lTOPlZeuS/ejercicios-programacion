@@ -1,0 +1,52 @@
+Inicio
+    Variable d es Numérico Natural
+	Variable m es Numérico Natural
+	Variable a es Numérico Natural
+	Variable fecha_correcta es Numérico Natural
+	Variable opcion es Numérico Natural
+
+    Leer "Introduzca ano:", a
+	Leer "Introduzca mes entero:", m
+	Leer "Introduzca dia:", d
+	fecha_correcta=0
+	
+	Si (esValida(m>=1 AND <=12)) entonces
+	    Si (esValida(m==3)) entonces
+        Si (esValida(m==5)) entonces
+        Si (esValida(m==7)) entonces
+        Si (esValida(m==8)) entonces
+        Si (esValida(m==10)) entonces
+        Si (esValida (m==12)) entonces
+		   	Si (esValida( dia >= 1 AND dia <= 31 )) entonces
+               Escribir "FECHA CORRECTA"
+            Sino
+                Escribir "FECHA INCORRECTA"
+        Si (esValida(m==4)) entonces
+        Si (esValida(m==6)) entonces
+        Si (esValida(m==9)) entonces
+        Si (esValida(m==11)) entonces
+		Si (esValida( d >= 1 AND d <= 30 )) entonces
+            Escribir "FECHA CORRECTA"
+        Sino
+            Escribir "FECHA INCORRECTA"
+        Si (esValida(m==2)) entonces
+		Si (esValida( a % 4 == 0 && a % 100 != 0 || a % 400 == 0 )entonces
+        Si (esValida( d>= 1 && d <= 29 )) entonces
+            Escribir "FECHA CORRECTA"
+        Sino
+            Escribir "FECHA INCORRECTA"
+        Sino
+        Si (esValida( d >= 1 && d <= 28 )) entonces
+            Escribir "FECHA CORRECTA" 
+        Sino
+            Escribir "FECHA INCORRECTA"
+	Sino
+		Escribir "La fecha no existe"
+	Fin-Si
+	Leer "Si desea continuar presione 1", opcion
+	Si(esValida(opcion==1))
+		Repetir el programa
+	Sino
+		Fin
+	Fin-Si
+Fin

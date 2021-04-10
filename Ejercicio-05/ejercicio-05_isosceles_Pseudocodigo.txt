@@ -1,0 +1,17 @@
+Inicio
+    Variable lado es Numérico Real
+	Variable base es Numérico Real
+	Variable peri es Numérico Real
+	Variable opcion es Numérico Natural
+
+    Leer "Ingrese la altura de su triangulo:", lado
+	Leer "Ingrese la base de su triangulo:", base
+	peri=(lado*2)+base
+	Escribir "El perimetro es",peri
+	Leer "Si desea continuar presione 1", opcion
+	Si(esValida(opcion==1))
+		Repetir el programa
+	Sino
+		Fin
+	Fin-Si
+Fin

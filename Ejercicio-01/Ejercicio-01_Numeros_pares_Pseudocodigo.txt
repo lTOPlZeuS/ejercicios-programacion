@@ -1,0 +1,17 @@
+Inicio
+    Variable numero es Numérico Natural
+	Variable opcion es Numérico Natural
+
+    Leer "Introduzca un numero entero:", numero
+	Si (esValida(numero%2==0)) entonces
+	     Escribir El numero es par
+	Sino
+		Escribir El numero es impar
+	Fin-Si
+	Leer "Si desea continuar presione 1", opcion
+	Si(esValida(opcion==1))
+		Repetir el programa
+	Sino
+		Fin
+	Fin-Si
+Fin
